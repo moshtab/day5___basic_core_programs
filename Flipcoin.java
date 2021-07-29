@@ -5,8 +5,8 @@ import java.util.Random;
 public class Flipcoin {
 
 	   public static void main(String[] args) {
-		int heads=0;
-		int tails=0;
+		float heads=0;
+		float tails=0;
 		
 		for(int i=0;i<40;i++) {
 		   Random r = new Random();
@@ -17,10 +17,11 @@ public class Flipcoin {
 		   else
 		      tails=tails+1;
 	   }
+		System.out.println("heads won: " +heads);
+		System.out.println("tails won: " +tails);
+		System.out.printf("heads percentage is: %.2f%n", (heads/(heads+tails))*100);
 		
-		System.out.println("heads won is :" +heads);
-		
-		System.out.println("tails won is : " +tails);
+		System.out.printf("tails percentage is: %.2f", (tails/(heads+tails))*100);
 
 	}
 
