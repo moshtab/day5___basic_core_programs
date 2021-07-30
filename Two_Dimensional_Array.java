@@ -2,7 +2,7 @@ package com.bridgelabz;
 
 import java.util.Scanner;
 
-public class Two_Dimensional_Array___ {
+public class Two_Dimensional_Array {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
