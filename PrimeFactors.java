@@ -9,15 +9,19 @@ public class PrimeFactors {
 		System.out.println("enter a number : ");
 		int num = s.nextInt();
 		s.close();
-		
-		for (int i =2;i<num;i++) {
-			while (num%i==0) {
-				System.out.println(i+ " ");
-				num=num/i;
+		primeFactors(num);
+	}
+
+	public static void primeFactors(int num) {
+
+		for (int i = 2; i < num; i++) {
+			while (num % i == 0) {
+				System.out.println(i + " ");
+				num = num / i;
 			}
 		}
-        if(num >=2)
-        	System.out.println(num);
+		if (num >= 2)
+			System.out.println(num);
 
 	}
 
